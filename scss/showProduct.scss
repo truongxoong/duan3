@@ -1,0 +1,72 @@
+.showProduct {
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+    background: rosybrown;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transition: all .7s ease;
+    transform: scale(0);
+    .showLeft {
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .showRight {
+        padding: 40px 20px;
+        position: relative;
+        .fa-circle-xmark {
+            position: absolute;
+            top: 2%;
+            right: 3%;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        h4 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        h5 {
+            font-weight: bold;
+            color: white;
+            font-size: 18px;
+        }
+        p {
+            padding: 20px 0;
+        }
+        .star {
+            padding-bottom: 50px;
+            color: rgb(209, 209, 28)
+        }
+        input {
+            border: none;
+            outline: none;
+            width: 100px;
+            height: 40px;
+            border-radius: 35px;
+            padding-left: 30px;
+            font-size: 25px;
+        }
+        button {
+            border: none;
+            outline: none;
+            border-radius: 35px;
+            padding: 10px 20px;
+            margin-left: 60px;
+            color: white;
+            font-weight: bold;
+            background: tomato;
+        }
+        .viewFull {
+            padding-top: 80px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}

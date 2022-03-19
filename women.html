@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du An 3</title>
+    <link rel="stylesheet" href="duan3.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e5dad05767.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <img src="img/logo.webp" alt="">
+        </div>
+        <div class="menu">
+            <ul class="menu_li">
+                <li><a href="">Trang Chủ</a></li>
+                <li>
+                    <a href="">Sản Phẩm</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li><a href="">Tin Tức</a></li>
+                <li><a href="">Liên Hệ</a></li>
+                <li><a href="">Hướng Dẫn</a></li>
+                <li>
+                    <a href="">Tính năng</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="cart">
+            <ul class="menu_cart">
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-solid fa-user"></i></li>
+                <li class="cart_top">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart_number">0</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- top -->
+    <div class="womenDetail">
+        <div class="container">
+            <div class="women_img">
+                <div class="showImg">
+                    <img src="imgwomen/women1.png" alt="">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="listImg">
+                    <div class="img active">
+                        <img src="imgwomen/women1.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="imgwomen/women2.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="imgwomen/women3.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="imgwomen/women4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="women_detail">
+                <h4> Áo Phông</h4>
+                <h5>
+                    <span>45</span>$ <del>100$</del>
+                </h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="size">
+                    <strong>Size: </strong>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <div class="value">
+                    <strong>Số Lượng: </strong>
+                    <input type="number" name="" id="" value="1" min="1">
+                </div>
+                <div class="color">
+                    <strong>Màu:</strong>
+                    <span class="color_violet actionColor"></span>
+                    <span class="color_red"></span>
+                    <span class="color_green"></span>
+                </div>
+                <div class="btnWon">
+                    <button>Thêm Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Chi tiết sản phẩm
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Thể loại: Nữ <br>
+                            Màu sắc: trắng <br>
+                            Size: M <br>
+                            Phong cách: Thể thao
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Vận chuyển
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <i class="fa-solid fa-truck"></i>
+                            Free ship cho những đơn hàng trên 100$. <br> <br>
+                            - Giao hàng ngay khi nhận được đơn. <br> 
+                            - Hoàn tiền nếu sản phẩm không giống với mô tả. <br>
+                            - Chấp nhận đổi hàng khi size không vừa
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Phương thức thanh toán
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            Thanh toán Online <br>
+                            <i class="fa-solid fa-person-circle-check"></i>
+                            Thanh toán khi nhận hàng
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="careWomen">
+            <div class="container">
+                <h2>Có thể bạn quan tâm</h2>
+                <div class="listProductCare">
+                    <div class="productCare">
+                        <img src="imgwomen/care1.png" alt="">
+                        <div class="namePrice">
+                            <p>SoMi trắng</p>
+                            <p class="priceCare">20$</p>
+                        </div>
+                    </div>
+                    <div class="productCare">
+                        <img src="imgwomen/care2.png" alt="">
+                        <div class="namePrice">
+                            <p>SoMi trắng</p>
+                            <p class="priceCare">20$</p>
+                        </div>
+                    </div>
+                    <div class="productCare">
+                        <img src="imgwomen/care3.png" alt="">
+                        <div class="namePrice">
+                            <p>SoMi trắng</p>
+                            <p class="priceCare">20$</p>
+                        </div>
+                    </div>
+                    <div class="productCare">
+                        <img src="imgwomen/care4.png" alt="">
+                        <div class="namePrice">
+                            <p>SoMi trắng</p>
+                            <p class="priceCare">20$</p>
+                        </div>
+                    </div>
+                    <div class="productCare">
+                        <img src="imgwomen/care5.png" alt="">
+                        <div class="namePrice">
+                            <p>SoMi trắng</p>
+                            <p class="priceCare">20$</p>
+                        </div>
+                    </div>
+                    <div class="productCare">
+                        <img src="imgwomen/care6.png" alt="">
+                        <div class="namePrice">
+                            <p>SoMi trắng</p>
+                            <p class="priceCare">20$</p>
+                        </div>
+                    </div>
+                    <div class="productCare">
+                        <img src="imgwomen/care7.png" alt="">
+                        <div class="namePrice">
+                            <p>SoMi trắng</p>
+                            <p class="priceCare">20$</p>
+                        </div>
+                    </div>
+                    <div class="productCare">
+                        <img src="imgwomen/care8.png" alt="">
+                        <div class="namePrice">
+                            <p>SoMi trắng</p>
+                            <p class="priceCare">20$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- sản phẩm có thể bạn quan tâm(care) -->
+    </div>
+    <!-- women -->
+    <div class="footer">
+        <div class="container">
+            <div class="Footer_address">
+                <h2>Shop</h2>
+                <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p> Minh Khai, Hai Bà Trưng</p>
+                </div>
+                <div class="mail address">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>378@gmail.com <br> <span style="color: rgb(190, 133, 63);">Chúng tôi trả lời trong vòng 24h</span></p>
+                </div>
+                <div class="phone address">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>123456789<br><span style="color: rgb(190, 133, 63);">24/24h</span></p>
+                </div>
+            </div>
+            <div class="Footer_address Footer_support">
+                <h2>Hỗ trợ khách hàng</h2>
+                <div>
+                    <p> Trung tâm bảo hành</p>
+                </div>
+                <div>
+                    <p> Chính sách đổi hàng và bảo hành</p>
+                </div>
+                <div>
+                    <p> Chi phí vận chuyển</p>
+                </div>
+                <div>
+                    <p> Hướng dẫn mua hàng Online</p>
+                </div>
+                <div>
+                    <p> Hướng dẫn bảo quản</p>
+                </div>
+                <div>
+                    <p> Chính sách bảo mật</p>
+                </div>
+            </div>
+            <div class="Footer_address Footer_payment">
+                <h2>Thanh toán</h2>
+                <div>
+                    <i class="fa-brands fa-cc-visa"></i>
+                </div>
+                <div >
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div >
+                    <i class="fa-brands fa-cc-jcb"></i>
+                </div>
+                <div >
+                    <i class="fa-brands fa-cc-paypal"></i>
+                </div>
+            </div>
+            <div class="Footer_address footer_follow">
+                <h2>Follow</h2>
+                <div >
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div >
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div >
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <div >
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <span>----------------------</span>
+            <i class="fa-solid fa-archway"></i>
+            <p>Xin chào và hẹn gặp lại</p>
+            <span>----------------------</span>
+        </div>
+    </div>
+    <!-- footer -->  
+
+    <div class="society">
+        <div class="society_facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="society_instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="society_tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+    </div>
+    <!-- society -->
+    <div class="showProduct">
+        <div class="showLeft">
+            <img src="img/men5.png" alt="">
+        </div>
+        <div class="showRight">
+            <i class="fa-solid fa-circle-xmark"></i>
+            <h4>Áo Phông</h4>
+            <h5> <span>45</span>$</h5>
+            <p>Đảm bảo vải chất lượng 100% cotton chuẩn xuất khẩu.
+                Áo được kiểm tra kĩ càng, cẩn thận. Giao hàng ngay 
+                khi nhận được đơn. Hoàn tiền nếu sản phẩm không 
+                giống với mô tả. Chấp nhận đổi hàng khi size không vừa
+            </p>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <input type="number" name="" id="" value="1" min="1">
+            <button>Thêm Vào Giỏ Hàng</button>
+            <div class="viewFull">
+                <span>Xem chi tiết</span>
+                <i class="fa-solid fa-right-long"></i>
+            </div>
+        </div>
+    </div>
+    <!-- showProduct -->
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="duan3.js"></script>
+    <script src="detail.js"></script>
+</body>
+</html>

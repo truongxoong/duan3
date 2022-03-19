@@ -1,0 +1,120 @@
+.overview {
+    padding: 50px 0;
+    h3 {
+        padding: 50px 0 30px 0;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px 50px 200px;
+        grid-gap: 30px;
+        .overview_img {
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+                button {
+                    transform: translate(-50%, -50%);
+                    opacity: 1;
+                }
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                transition: all .6s ease;
+            }
+            .overTitle {
+                position: absolute;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .overTitle1 {
+                top: 3%;
+                right: 5%;
+                background: thistle;
+                padding: 10px 20px;
+                color: #2b1fe5;
+                animation: overTitle 2s ease infinite;
+                @keyframes overTitle {
+                    0%{
+                        transform: translateX(0%);
+                    }
+                    50%{
+                        transform: translateX(-15%);
+                    }
+                    100% {
+                        transform: translateX(0%);
+                    }
+                }
+            }
+            .overTitle2 {
+                top: 80%;
+                left: 10%;
+                padding: 5px 20px;
+                background: rgb(16, 100, 156);
+                color: #d3d4d5;
+            }
+            .overTitle3,
+            .overTitle4 {
+                top: 5%;
+                left: 5%;
+                padding: 5px 30px;
+                background: #7ab3bf;
+                color: #782a0c;
+                border-radius: 10px 0;
+            }
+            .overTitle5 {
+                top: 5%;
+                right: 5%;
+                padding: 5px 30px;
+                background: #6f7d8169;
+                color: #0c1e78ba;
+                border-radius: 0px 10px;
+            }
+            button {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -110%);
+                border: none;
+                outline: none;
+                padding: 5px 50px;
+                border-radius: 30px;
+                color: #fffbfb;
+                font-size: 28px;
+                background: #212529e0;
+                opacity: 0;
+                transition: all .6s ease;
+                &:hover {
+                    color: #dd4309;
+                    background: #212529;
+                }
+            }
+        }
+        .over1 {
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+        .over2 {
+            grid-row: 1/2;
+        }
+        .over3 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .over4 {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .over5 {
+            grid-column: 3/4;
+            grid-row: 2/4;
+        }
+    }
+}

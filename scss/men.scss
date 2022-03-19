@@ -1,0 +1,124 @@
+.men {
+    padding-bottom: 100px;
+    h3 {
+        padding: 30px 0;
+    }
+    .container {
+        .womenLists {
+            .swiper {
+                width: 100%;
+                height: 100%;
+                .swiper-wrapper {
+                    .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                        background: #fff;
+                        position: relative;
+                        cursor: pointer;
+                        overflow: hidden;
+                        &:hover {
+                            img {
+                                transform: scale(1.1);
+                            }
+                            .swiper_icon {
+                                opacity: 1;
+                                top: 5%;
+                            }
+                            .btn {
+                                top: 70%;
+                                opacity: 1;
+                            }
+                        }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                            transition: all .6s ease;
+                        }
+                        .ads {
+                            position: absolute;
+                            top: 5%;
+                            left: 5%;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            background: #6cef54;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #055160;
+                        }
+                        .ads3 {
+                            color: #1a1919de;
+                            background: #959391;
+                        }
+                        .swiper_icon {
+                            position: absolute;
+                            top: 0%;
+                            right: 5%;
+                            display: flex;
+                            flex-direction: column;
+                            opacity: 0;
+                            transition: all .5s ease;
+                            .fa-heart {
+                                padding-bottom: 10px;
+                            }
+                            p {
+                                padding-top: 5px;
+                                color: tomato;
+                            }
+                        }
+                        .btn {
+                            position: absolute;
+                            top: 80%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            border: none;
+                            outline: none;
+                            width: 70%;
+                            height: 50px;
+                            background: #000000cf;
+                            color: white;
+                            font-weight: bold;
+                            transition: all .6s ease;
+                            border-radius: 35px;
+                            padding-top: 12px;
+                            opacity: 0;
+                            &:hover {
+                                background: #060606eb;
+                                color: tomato;
+                            }
+                        }
+                    }
+                }
+                .swiper-button-next {
+                    width: 35px;
+                    height: 35px;
+                    border: 1px solid black;
+                    border-radius: 100%;
+                    &::after{
+                        display: none;
+                    }
+                    i {
+                        font-size: 30px;
+                        color: black;
+                    }
+                }
+                .swiper-button-prev {
+                    width: 35px;
+                    height: 35px;
+                    border: 1px solid black;
+                    border-radius: 100%;
+                    &::after{
+                        display: none;
+                    }
+                    i {
+                        font-size: 30px;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

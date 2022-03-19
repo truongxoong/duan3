@@ -1,0 +1,33 @@
+.searchTop {
+    position: absolute;
+    top: -22%;
+    left:30%;
+    width: 900px;
+    height: 200px;
+    background: rgb(175, 164, 150);
+    z-index: 1;
+    border-radius: 35px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .6s ease;
+    .search {
+        width: 50%;
+        background: white;
+        border-radius: 35px 0;
+        input {
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            width: 90%;
+            background: none;
+        }
+    }
+    .fa-circle-xmark {
+        position: absolute;
+        top: 8%;
+        right:2%;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}

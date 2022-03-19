@@ -1,0 +1,63 @@
+.top {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    align-items: center;
+    background: #dfc7c359;
+    .menu {
+        &_li {
+            display: flex;
+            a {
+                color: black;
+                font-size: 18px;
+                font-weight: bold;
+                padding-left: 50px;
+                transition: all .5s ease;
+                text-decoration: none;
+                &:hover {
+                    color: tomato;
+                }
+
+            }
+            li {
+                i {
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+    .cart {
+        .menu_cart {
+            display: flex;
+            .fa-user {
+                margin: 0 30px;
+            }
+            .cart_top {
+                position: relative;
+                .cart_number {
+                    position: absolute;
+                    font-size: 13px;
+                    top: -25%;
+                    left: 81%;
+                    height: 17px;
+                    width: 17px;
+                    background: tan;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 17px;
+                }
+            }
+            li {
+                i {
+                    transition: all .5s ease ;
+                    &:hover {
+                        color: tomato;
+                        cursor: pointer;
+                    }
+                } 
+            }
+        }
+    }
+}

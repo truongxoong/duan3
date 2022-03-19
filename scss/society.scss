@@ -1,0 +1,41 @@
+.society {
+    position: fixed;
+    top: 45%;
+    left: 1px;
+    div {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 3px;
+        position: relative;
+        transition: all .8s ease;
+        &:hover {
+            width: 160%;
+            cursor: pointer;
+        }
+        i {
+            font-size: 35px;
+            line-height: 70px;
+            position: absolute;
+            right: 20%;
+        }
+    }
+    .society_facebook {
+        background: linear-gradient(to right, #3d8ae6, #55b6fd);
+        i {
+            color: white;
+        }
+    }
+    .society_instagram {
+        background: linear-gradient(to right, #4c96df, #aa5dcd);
+        i {
+            color: tomato;
+            font-weight: bold;
+        }
+    }
+    .society_tiktok {
+        background: linear-gradient(to right, #210d1d, #330c21);
+        i {
+            color: #25f4ee;
+        }
+    }
+}

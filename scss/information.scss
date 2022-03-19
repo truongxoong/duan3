@@ -1,0 +1,66 @@
+.information {
+    height: 150px;
+    width: 100%;
+    background: #ced2d6;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .title {
+            padding-top: 50px;
+            h4 {
+                font-size: 25px;
+                font-weight: bold;
+                span {
+                    color: tomato;
+                }
+            }
+        }    
+        .form {
+            padding-top: 50px;
+            margin-left: 100px;
+            position: relative;
+            input {
+                border: none;
+                outline: none;
+                height: 52px;
+                width: 60%;
+                padding: 0 10px;
+                border-radius: 8px;
+                font-size: 21px;
+                &:focus {
+                    ~span {
+                        width: 60%;
+                        top: 39%;
+                        height: 52px;
+                    }
+                }
+            }
+            button {
+                border: none;
+                outline: none;
+                height: 52px;
+                width: 20%;
+                border-radius: 8px;
+                background: tomato;
+                font-weight: bold;
+                transition: all 0.7s ease;
+                &:hover {
+                    background: black;
+                    color: white;
+                    transform: translateX(10px);
+                }
+            }
+            span {
+                content: "";
+                position: absolute;
+                top: 43%;
+                left: 0;
+                height: 42px;
+                width: 0%;
+                border: 1px solid red;
+                transition: all 0.5s ease;
+                border-radius: 8px;
+            }
+        }    
+    }
+}
